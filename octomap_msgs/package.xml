@@ -1,0 +1,33 @@
+<package format="3">
+  <name>octomap_msgs</name>
+  <version>2.0.0</version>
+  <description>
+   This package provides messages and serializations / conversion for the <a href="http://octomap.github.com">OctoMap library</a>.
+   This ROS2 version is based on version 0.3.3 of the ROS1 package.
+  </description>
+
+  <author email="armin@hornung.io">Armin Hornung</author>
+  <maintainer email="opensource@wolfgangmerkt.com">Wolfgang Merkt</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/octomap_msgs</url>
+  <url type="bugtracker">https://github.com/OctoMap/octomap_msgs/issues</url>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+
+  <build_depend>rosidl_default_generators</build_depend>
+
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

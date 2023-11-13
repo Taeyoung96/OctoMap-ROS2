@@ -1,0 +1,11 @@
+/**
+\mainpage
+\htmlinclude manifest.html
+
+\b octomap_ros provides conversion functions between ROS and <a href="http://octomap.sourceforge.net/">OctoMap</a> in conversions.h. 
+With these conversions and the message conversions in the octomap_msgs package, you can
+conveniently use OctoMap in ROS. 
+
+
+
+*/

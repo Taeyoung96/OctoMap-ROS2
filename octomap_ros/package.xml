@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>octomap_ros</name>
+  <version>0.4.3</version>
+  <description>
+    octomap_ros provides conversion functions between ROS and OctoMap's native types.
+    This enables a convenvient use of the octomap package in ROS.
+  </description>
+  <maintainer email="opensource@wolfgangmerkt.com">Wolfgang Merkt</maintainer>
+  <maintainer email="armin@hornung.io">Armin Hornung</maintainer>
+  <license>BSD</license>
+  <url type="website">http://ros.org/wiki/octomap_ros</url>
+  <url type="bugtracker">https://github.com/OctoMap/octomap_ros/issues</url>
+  <author email="armin@hornung.io">Armin Hornung</author>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <depend>octomap</depend>
+  <depend>octomap_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf2</depend>
+
+  <test_depend>ament_cmake_gtest</test_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
