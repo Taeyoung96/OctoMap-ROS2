@@ -66,16 +66,27 @@ root@taeyoung-cilab:~/ros2_ws#
 
 ### How to run  
 
-You need to run the 3D Mapping package (ex. FAST_LIO_ROS2) at the same time.  
-
 On `/ros2_ws` directory,
-```
-colcon build
-```
 
+Build the packages with dependencies at first.
+```
+colcon build --packages-select octomap_msgs octomap_ros
+```
 ```
 source install/setup.bash
 ```
+
+Then build all the packages.
+```
+colcon build
+```
+```
+source install/setup.bash
+```
+
+
+**You need to run the 3D Mapping package (ex. FAST_LIO_ROS2) at the same time.**  
+
 
 ```
 ros2 launch octomap_server octomap_yonsei-hall-4_mapping.launch.xml
