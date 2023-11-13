@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>octomap_server</name>
+  <version>2.0.0</version>
+  <description>
+    octomap_server loads a 3D map (as Octree-based OctoMap) and distributes it to other nodes in a compact binary format. It also allows to incrementally build 3D OctoMaps, and provides map saving in the node octomap_saver.
+  </description>
+  <maintainer email="opensource@wolfgangmerkt.com">Wolfgang Merkt</maintainer>
+  <license>BSD</license>
+  <url>http://www.ros.org/wiki/octomap_server</url>
+  <url type="bugtracker">https://github.com/OctoMap/octomap_mapping/issues</url>
+  <url type="repository">https://github.com/OctoMap/octomap_mapping</url>
+  <author>Armin Hornung</author>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <depend>geometry_msgs</depend>
+  <depend>libpcl-all-dev</depend>
+  <depend>message_filters</depend>
+  <depend>nav_msgs</depend>
+  <depend>octomap</depend>
+  <depend>octomap_msgs</depend>
+  <depend>octomap_ros</depend>
+  <depend>pcl_conversions</depend>
+  <depend>pcl_ros</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_components</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_eigen</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>visualization_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
