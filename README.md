@@ -63,3 +63,27 @@ Current working directory: /home/taeyoung/Desktop/FAST_LIO_ROS2
 ================Octomap server ROS2 Docker Env Ready================
 root@taeyoung-cilab:~/ros2_ws#
 ```
+
+### How to run  
+
+You need to run the 3D Mapping package (ex. FAST_LIO_ROS2) at the same time.  
+
+On `/ros2_ws` directory,
+```
+colcon build
+```
+
+```
+source install/setup.bash
+```
+
+```
+
+```
+
+
+#### Map save
+```
+ros2 run nav2_map_server map_saver_cli -f ~/ros2_ws/src/ --ros-args --remap map:=/projected_map
+```
+
