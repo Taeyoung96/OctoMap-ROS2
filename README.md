@@ -78,7 +78,7 @@ source install/setup.bash
 ```
 
 ```
-
+ros2 launch octomap_server octomap_yonsei-hall-4_mapping.launch.xml
 ```
 
 
