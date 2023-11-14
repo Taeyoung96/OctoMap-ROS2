@@ -10,6 +10,11 @@ This repository uses a part of the [octomap_mapping](https://github.com/OctoMap/
 - [Docker](https://www.docker.com/)  
 - [NVIDIA docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
 
+### Environment setting  
+- ROS2 humble
+- PCL
+- Eigen
+- 
 Clone this repository. It doesn't matter if the path is not a ros2 workspace.   
 ```
 git clone https://github.com/Taeyoung96/OctoMap-ROS2.git
@@ -22,11 +27,6 @@ cd docker
 ```
 docker build -t octomap-ros2:latest .
 ```
-
-### Environment setting  
-- ROS2 humble
-- PCL
-- Eigen
 
 ### Make a docker container  
 
