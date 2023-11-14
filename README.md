@@ -4,6 +4,16 @@ This repository uses a part of the [octomap_mapping](https://github.com/OctoMap/
 
 **I recommend utilizing docker to easily configure your environment setting.**
 
+## Result  
+Test with custom data, the camera is for visualization purposes only.  
+
+
+
+https://github.com/Taeyoung96/OctoMap-ROS2/assets/41863759/3d53ad32-6371-4b3a-9358-25b3ce2297e5
+
+
+
+
 ## How to use  
 
 ### Requirements  
@@ -85,13 +95,17 @@ source install/setup.bash
 ```
 
 
-**You need to run the 3D Mapping package (ex. FAST_LIO_ROS2) at the same time.**  
+**You need to run the 3D Mapping package (ex. [FAST_LIO_ROS2](https://github.com/Taeyoung96/FAST_LIO_ROS2)) at the same time.**  
 
+On the FAST-LIO2 terminal,
+```
+ros2 launch fast_lio velodyne.launch.py
+```
 
+For this docker container,  
 ```
 ros2 launch octomap_server octomap_yonsei-hall-4_mapping.launch.xml
 ```
-
 
 #### Map save
 ```
