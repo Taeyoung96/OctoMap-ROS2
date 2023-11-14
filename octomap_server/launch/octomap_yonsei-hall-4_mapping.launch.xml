@@ -8,29 +8,27 @@
 -->
 <launch>
 	<node pkg="octomap_server" exec="octomap_server_node" name="octomap_server">
-		<param name="resolution" value="0.05" />
+		<param name="resolution" value="0.05"/>
 
-		<!-- fixed map frame (set to 'map' if SLAM or localization running!) -->
-		<param name="frame_id" value="map" />
-		<param name="base_frame_id" value="body" /> <!-- no used-->
+		<!--  fixed map frame (set to 'map' if SLAM or localization running!)  -->
+		<param name="frame_id" value="camera_init"/>
+		<param name="base_frame_id" value="body"/> <!--  no used -->
 
-		<!-- maximum range to integrate (speedup!) -->
-		<param name="sensor_model.max_range" value="37.0" />
+		<!--  maximum range to integrate (speedup!)  -->
+		<param name="sensor_model.max_range" value="40.0"/>
+		<param name="incremental_2D_projection" value="false"/>
+		<param name="occupancy_min_z" value="0.1"/>
+		<param name="occupancy_max_z" value="1.0"/>
 
-		<param name="incremental_2D_projection" value="false" />
-		<param name="occupancy_min_z" value="-1.5" />
-		<param name="occupancy_max_z" value="1.0" />
-		
-		<!--ground filtering-->
-		<param name="filter_ground_plane" value="true" />
-		<param name="ground_filter.distance" value="0.3" />
-		<param name="ground_filter.angle" value="0.2" />
-		<param name="ground_filter.plane_distance" value="1.00" />
+		<!-- ground filtering -->
+		<param name="filter_ground_plane" value="true"/>
+		<param name="ground_filter.distance" value="0.04"/>
+		<param name="ground_filter.angle" value="0.15"/>
+		<param name="ground_filter.plane_distance" value="1.00"/>
+		<param name="pointcloud_min_z" value="-3.0"/>
+		<param name="pointcloud_max_z" value="1.5"/>
 
-		<param name="pointcloud_min_z" value="-3.0" />
-		<param name="pointcloud_max_z" value="5.0" />
-
-		<!-- data source to integrate (PointCloud2) -->
-		<remap from="cloud_in" to="/Laser_map" />
+		<!--  data source to integrate (PointCloud2)  -->
+		<remap from="cloud_in" to="/cloud_registered"/>
 	</node>
 </launch>
