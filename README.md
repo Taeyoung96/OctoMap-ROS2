@@ -24,7 +24,7 @@ https://github.com/Taeyoung96/OctoMap-ROS2/assets/41863759/3d53ad32-6371-4b3a-93
 - ROS2 humble
 - PCL
 - Eigen
-- 
+
 Clone this repository. It doesn't matter if the path is not a ros2 workspace.   
 ```
 git clone https://github.com/Taeyoung96/OctoMap-ROS2.git
@@ -104,7 +104,7 @@ ros2 launch fast_lio velodyne.launch.py
 
 For this docker container,  
 ```
-ros2 launch octomap_server octomap_yonsei-hall-4_mapping.launch.xml
+ros2 launch octomap_server octomap_mapping.launch.xml
 ```
 
 #### Map save
