@@ -8,8 +8,7 @@ This repository uses a part of the [octomap_mapping](https://github.com/OctoMap/
 Test with custom data, the camera is for visualization purposes only.  
 
 
-
-https://github.com/Taeyoung96/OctoMap-ROS2/assets/41863759/3d53ad32-6371-4b3a-9358-25b3ce2297e5
+https://github.com/Taeyoung96/OctoMap-ROS2/assets/41863759/ae004561-acd5-4003-bc01-458928123521
 
 
 
